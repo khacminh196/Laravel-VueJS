@@ -1754,6 +1754,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -9463,7 +9469,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#sidebarnav .sidebar-item a {\n    text-decoration: none;\n}\n", ""]);
+exports.push([module.i, "\n#sidebarnav .sidebar-item a {\n    text-decoration: none;\n}\n.btn-logout {\n    background: darkolivegreen;\n}\n", ""]);
 
 // exports
 
@@ -41436,14 +41442,38 @@ var render = function() {
                 )
               ],
               1
-            )
+            ),
+            _vm._v(" "),
+            _vm._m(0)
           ])
         ])
       ])
     ]
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "sidebar-item btn-logout" }, [
+      _c(
+        "a",
+        {
+          staticClass: "sidebar-link waves-effect waves-dark sidebar-link",
+          attrs: { href: "logout", "aria-expanded": "false" }
+        },
+        [
+          _c("i", { staticClass: "mdi mdi-account-network" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "hide-menu" }, [
+            _c("b", [_vm._v("Logout")])
+          ])
+        ]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 

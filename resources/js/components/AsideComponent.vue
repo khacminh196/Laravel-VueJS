@@ -47,6 +47,12 @@
                             <span class="hide-menu">404</span>
                         </router-link>
                     </li>
+                    <li class="sidebar-item btn-logout">
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="logout" aria-expanded="false">
+                            <i class="mdi mdi-account-network"></i>
+                            <span class="hide-menu"><b>Logout</b></span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- End Sidebar navigation -->
@@ -64,5 +70,8 @@ export default {
 <style>
     #sidebarnav .sidebar-item a {
         text-decoration: none;
+    }
+    .btn-logout {
+        background: darkolivegreen;
     }
 </style>
