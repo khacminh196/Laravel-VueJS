@@ -20,9 +20,9 @@ class LoginController extends Controller
         ];
 
         if(Auth::guard('admin')->attempt($arr)) {
-            echo "Success";
+            return redirect('/');
         } else {
-            echo "Fail";
+            return redirect()->back()->with('error', 'Sai tên đăng nhập hoặc mật khẩu');
         }
     }
 

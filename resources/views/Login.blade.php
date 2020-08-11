@@ -26,6 +26,9 @@
 </head>
 
 <body>
+    @if (Session::has('error'))
+        <h2>{{ Session::get('error') }}</h2>
+    @endif
     <div class="wrapper-login">
         <form action="{{ route('postLogin') }}" method="post">
             @csrf

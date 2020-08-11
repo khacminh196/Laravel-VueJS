@@ -17,6 +17,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('test', function() {
-    return "Test API";
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('DonHang', 'DonHangController');
 });

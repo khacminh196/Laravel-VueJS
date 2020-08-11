@@ -16,6 +16,6 @@ Route::get('logout', 'LoginController@logout')->name('logout');
 
 Route::get('{any}', function () {
     return view('welcome');
-})->where('any','.*');
+})->where('any','.*')->middleware('login');
 
 
