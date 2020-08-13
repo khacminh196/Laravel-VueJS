@@ -4,7 +4,7 @@ import FormBasic from "./components/content/FormBasic.vue";
 import Table from "./components/content/TableBasic.vue";
 import Icon from "./components/content/Icon.vue";
 import Blank from "./components/content/Blank.vue";
-import Error404 from "./components/content/Error404.vue";
+import Error404 from "./components/content/404.vue";
 
 export const routes = [
     { path : '/', name : 'home', component : Home },

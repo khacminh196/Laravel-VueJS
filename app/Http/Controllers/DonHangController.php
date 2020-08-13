@@ -17,7 +17,7 @@ class DonHangController extends Controller
     public function index()
     {
         $don_hang = $this->donHangRepository->getAll();
-        dd($don_hang);
+        return response()->json($don_hang, 200);
     }
 
     public function create()
