@@ -28,13 +28,14 @@ class DonHangController extends Controller
 
     public function store(Request $request)
     {
-        //
+        $this->donHangRepository->createItem($request);
+        return response()->json("Create Success");
     }
 
     public function show($id)
     {
         $don = $this->donHangRepository->getById($id);
-        echo $don;
+        return response()->json($don, 200);
     }
 
 
@@ -45,11 +46,13 @@ class DonHangController extends Controller
 
     public function update(Request $request, $id)
     {
-        //
+        $this->donHangRepository->updateItem($id, $request);
+        return response()->json("Update Finish");
     }
 
     public function destroy($id)
     {
-        echo "Dang o day";
+        $this->donHangRepository->deleteItem($id);
+        return response()->json("Finish");
     }
 }
